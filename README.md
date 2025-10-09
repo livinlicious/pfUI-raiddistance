@@ -32,7 +32,7 @@ A pfUI extension addon that displays distance and line-of-sight information on r
 
 - **White text** - Unit is in line-of-sight
 - **Red text** - Unit is NOT in line-of-sight (behind wall/obstacle)
-- **"--"** - Distance cannot be determined
+- **"--"** - Distance cannot be determined (too far away, other map)
 - **"##yr"** - Distance in yards (e.g., "25yr")
 
 ## Performance
@@ -47,11 +47,7 @@ This addon is optimized for raid environments:
 
 Requires:
 - pfUI (dependency)
-- UnitXP addon or similar for distance calculations
-
-Works with:
-- pfUI raid frames (up to 40 players)
-- pfUI party frames (when not in raid)
+- UnitXP addon with Mod
 
 ## Disclaimer
 
@@ -72,3 +68,4 @@ Feel free to modify, fork, or redistribute as needed.
 ## Credits
 
 Built as an extension to pfUI for Vanilla/TBC WoW. Shagu is the GOAT, all hail the King.
+
