@@ -2,6 +2,8 @@
 
 A pfUI extension addon that displays distance and line-of-sight information on raid and party frames.
 
+![Demo](demo.gif)
+
 ## Features
 
 - Shows distance in yards to raid/party members
@@ -68,4 +70,5 @@ Feel free to modify, fork, or redistribute as needed.
 ## Credits
 
 Built as an extension to pfUI for Vanilla/TBC WoW. Shagu is the GOAT, all hail the King.
+
 
