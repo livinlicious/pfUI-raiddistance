@@ -1,10 +1,12 @@
 # pfUI Raid Distance
 
+![Demo](demo.gif)
+
 An extension for **pfUI** that displays distance information on **Raid**, **Party**, and **Target** unit frames.
 
 ## Features
 
-- **Distance Display**: Shows the distance in yards (e.g., "25yr") on unit frames.
+- **Distance Display**: Shows the distance in yards (e.g., "25yd") on unit frames.
 - **Smart Coloring**: Text turns **Red** if the unit is out of range (>40 yards) or out of line-of-sight. Text is **White** otherwise.
 - **Separate Configurations**: Individually configure settings for **Raid**, **Party**, and **Target** frames.
 - **Performance Optimized**: Configurable update frequency to minimize CPU usage in large raids.
@@ -35,6 +37,7 @@ Per-Frame Settings (Raid / Party / Target):
 
 - **Dependencies**: Requires `pfUI`.
 - **Distance Calculation**: Relies on `UnitXP` to determine distance and Line of Sight.
+- **Layering**: Text is properly layered (Overlay) to ensure it appears above health bars, especially on Party frames.
 
 ## Disclaimer
 
@@ -49,4 +52,3 @@ Per-Frame Settings (Raid / Party / Target):
 
 Built as an extension to **pfUI** for Vanilla/TBC WoW.
 Shagu is the GOAT, all hail the King.
-
