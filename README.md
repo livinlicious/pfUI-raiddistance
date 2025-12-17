@@ -34,8 +34,7 @@ Per-Frame Settings (Raid / Party / Target):
 ## Technical Details
 
 - **Dependencies**: Requires `pfUI`.
-- **Distance Calculation**: Relies on standard library functions (like generic `UnitXP` or native APIs if available) to determine distance and Line of Sight.
-- **Layering**: Text is properly layered (Overlay) to ensure it appears above health bars, especially on Party frames.
+- **Distance Calculation**: Relies on `UnitXP` to determine distance and Line of Sight.
 
 ## Disclaimer
 
@@ -50,3 +49,4 @@ Per-Frame Settings (Raid / Party / Target):
 
 Built as an extension to **pfUI** for Vanilla/TBC WoW.
 Shagu is the GOAT, all hail the King.
+
