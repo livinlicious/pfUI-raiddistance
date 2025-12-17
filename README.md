@@ -1,74 +1,52 @@
 # pfUI Raid Distance
 
-A pfUI extension addon that displays distance and line-of-sight information on raid and party frames.
-
-![Demo](demo.gif)
+An extension for **pfUI** that displays distance information on **Raid**, **Party**, and **Target** unit frames.
 
 ## Features
 
-- Shows distance in yards to raid/party members
-- Visual line-of-sight indicator (white = LOS, red = no LOS)
-- Configurable update frequency for performance tuning
-- Customizable font size, positioning, and text alignment
-- Native pfUI integration with GUI configuration
+- **Distance Display**: Shows the distance in yards (e.g., "25yr") on unit frames.
+- **Smart Coloring**: Text turns **Red** if the unit is out of range (>40 yards) or out of line-of-sight. Text is **White** otherwise.
+- **Separate Configurations**: Individually configure settings for **Raid**, **Party**, and **Target** frames.
+- **Performance Optimized**: Configurable update frequency to minimize CPU usage in large raids.
+- **Native Integration**: Seamlessly integrated into the pfUI settings menu.
+
+> **Note:** Target of Target (ToT) and ToToT frames are intentionally not supported to keep the addon lightweight and focused.
 
 ## Installation
 
-1. Copy the `pfUI-raiddistance` folder to your WoW AddOns directory
-2. Reload your UI or restart WoW
-3. The addon will automatically load with pfUI
+1. Copy the `pfUI-raiddistance` folder to your WoW AddOns directory:
+   `...\Interface\AddOns\pfUI-raiddistance`
+2. Restart WoW or reload your UI.
 
-## Usage
+## Usage & Configuration
 
-1. Open pfUI configuration (`/pfui`)
-2. Navigate to **Thirdparty** → **Raid Distance**
-3. Configure:
-   - **Enable Raid Distance** - Toggle the entire system on/off
-   - **Update Frequency** - How often to refresh distances (seconds, default: 0.5)
-   - **Font Size** - Size of distance text (default: 10)
-   - **X Offset** - Horizontal position adjustment
-   - **Y Offset** - Vertical position adjustment
-   - **Text Alignment** - Left, Center, or Right alignment
+Go to **pfUI Settings** (`/pfui`) → **Thirdparty** → **Raid Distance**.
 
-## Visual Indicators
+Global Settings:
+- **Update Frequency**: How often to refresh distances (default: 0.5s).
 
-- **White text** - Unit is in line-of-sight
-- **Red text** - Unit is NOT in line-of-sight (behind wall/obstacle)
-- **"--"** - Distance cannot be determined (too far away, other map)
-- **"##yr"** - Distance in yards (e.g., "25yr")
-
-## Performance
-
-This addon is optimized for raid environments:
-- Configurable update frequency to balance accuracy vs. CPU usage
-- Only updates active raid/party frames
-- Skips player's own frame
-- Efficient frame counter system for timing updates
+Per-Frame Settings (Raid / Party / Target):
+- **Enable**: Toggle distance display for this specific frame type.
+- **Font Size**: Adjust the text size.
+- **X / Y Offset**: Fine-tune the position.
+- **Text Alignment**: Left, Center, or Right.
 
 ## Technical Details
 
-Requires:
-- pfUI (dependency)
-- UnitXP addon with Mod
+- **Dependencies**: Requires `pfUI`.
+- **Distance Calculation**: Relies on standard library functions (like generic `UnitXP` or native APIs if available) to determine distance and Line of Sight.
+- **Layering**: Text is properly layered (Overlay) to ensure it appears above health bars, especially on Party frames.
 
 ## Disclaimer
 
 **USE AT YOUR OWN RISK**
 
-- This addon is provided **AS-IS** with no warranty
-- I do not provide support for this addon
-- If you encounter issues, you can fork the code and modify it yourself
-- Consider using AI tools (like Claude 4.5) to create your own version
-- I maintain this addon only as long as I personally use it
-- No guarantee of future compatibility or updates
-- No responses to feature requests or support inquiries
-
-## License
-
-Feel free to modify, fork, or redistribute as needed.
+- This addon is provided **AS-IS** with no warranty.
+- I do not provide support for this addon.
+- If you encounter issues, feel free to fork and modify the code.
+- I maintain this addon only for personal use; feature requests may not be addressed.
 
 ## Credits
 
-Built as an extension to pfUI for Vanilla/TBC WoW. Shagu is the GOAT, all hail the King.
-
-
+Built as an extension to **pfUI** for Vanilla/TBC WoW.
+Shagu is the GOAT, all hail the King.
