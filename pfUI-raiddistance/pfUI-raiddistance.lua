@@ -167,7 +167,7 @@ pfUI:RegisterModule("RaidDistance", "vanilla:tbc", function ()
     end
 
     if distance and tonumber(distance) and tonumber(distance) > 0 then
-      distanceText:SetText(string.format("%.0fyr", tonumber(distance)))
+      distanceText:SetText(string.format("%.0fyd", tonumber(distance)))
     else
       distanceText:SetText("--")
     end
